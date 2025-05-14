@@ -1,0 +1,70 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(/backgr1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    opacity: 0.95;
+    z-index: 0;
+  }
+  
+  .main > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hlogo{
+    border-radius: 30px;
+  }
+
+  .welbox{
+    height: 400px;
+    width: 350px;
+    background-color: rgba(176, 51, 151, 0.453);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: solid white 2px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(176, 51, 151, 0.453);
+  }
+
+  .cbtn{
+    height: 30px;
+    width: 100px;
+    background-color: blueviolet;
+    outline: none;
+    border: solid 1.5px white;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+  }

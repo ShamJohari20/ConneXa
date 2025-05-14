@@ -1,0 +1,86 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #7F00FF,#E100FF);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.child1{
+    height: 420px;
+    width: 360px;
+    background-color: rgba(187, 198, 208, 0.575);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 35px;
+    border: blanchedalmond 2px solid;
+    border-radius: 10px;
+    padding: 10px 3px 10px 3px;
+}
+
+.logo{
+    width: 200px;
+    border-radius: 20px;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+.name{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    row-gap: 5px;
+}
+.lbl{
+    text-align: left;
+    font-size: larger;
+    font-weight: 700;
+}
+.inp{
+    height: 40px;
+    width: 230px;
+    padding-left: 10px;
+    outline: none;
+    border: blueviolet solid 1.5px;
+    border-radius: 10px;
+
+}
+
+.btn{
+    height: 40px;
+    width: 100px;
+    background-color: #E100FF;
+    outline: none;
+    border: 1.5px solid whitesmoke;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #7F00FF;
+}
+
+.lnk{
+    text-decoration: none;
+}
+
+.lnk:hover{
+    color: black;
+}
