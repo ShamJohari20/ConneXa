@@ -42,7 +42,7 @@
 
   .welbox{
     height: 400px;
-    width: 350px;
+    width: 320px;
     background-color: rgba(176, 51, 151, 0.453);
     display: flex;
     flex-wrap: wrap;
@@ -54,6 +54,7 @@
     border: solid white 2px;
     border-radius: 20px;
     box-shadow: 0px 0px 8px rgba(176, 51, 151, 0.453);
+    text-align: center;
   }
 
   .cbtn{

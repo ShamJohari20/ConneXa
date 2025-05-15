@@ -12,7 +12,7 @@
 
 .child1{
     height: 420px;
-    width: 360px;
+    width: 320px;
     background-color: rgba(187, 198, 208, 0.575);
     display: flex;
     flex-wrap: wrap;

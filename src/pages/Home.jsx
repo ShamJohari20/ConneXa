@@ -17,7 +17,7 @@ function Home() {
                     <div className={style.welbox}>
                         <img className={style.hlogo} src="/logo3.png" width={300} />
                         <h1>Welcome to ConneXa</h1>
-                        <p>Where Every Connection Begins with a Message !</p>
+                        <p>Where Every Connection Begins with a Message 💌 !</p>
                         <button className={style.cbtn} onClick={go}>Continue...</button>
                     </div>
                 </div>
