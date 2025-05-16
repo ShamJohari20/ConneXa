@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import style from '../css/ChatRoom.module.css';
 import UserList from './UserList';
 import ChatWindow from './ChatWindow';
-import { auth } from './Firebase';
-import { db } from './Firebase';
+import { auth } from './firebase';
+import { db } from './firebase';
 import { doc, getDoc } from 'firebase/firestore';
 
 function ChatRoom() {

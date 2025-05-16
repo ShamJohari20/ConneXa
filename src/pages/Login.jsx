@@ -3,7 +3,7 @@ import style from '../css/Login.module.css'
 import Signup from './Signup'
 import { Link, useNavigate } from 'react-router-dom'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from './FIrebase';
+import { auth } from './firebase';
 import ChatRoom from './ChatRoom';
 
 
