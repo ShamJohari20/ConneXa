@@ -3,9 +3,9 @@ import style from '../css/Signup.module.css'
 import Login from './Login'
 import { Link, useNavigate } from 'react-router-dom'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from './FIrebase';
+import { auth } from './Firebase';
 import { doc, setDoc } from 'firebase/firestore';
-import { db } from './FIrebase';
+import { db } from './Firebase';
 import { Navigate } from 'react-router-dom';
 
 function Signup() {

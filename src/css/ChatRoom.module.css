@@ -1,0 +1,102 @@
+/* .parent {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, #f4c4f3, #fc67fa);
+}
+
+.child1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 2px white;
+
+}
+
+.hedding {
+    text-align: center;
+    text-wrap: wrap;
+
+}
+
+ */
+
+
+
+
+/* 
+
+ .parent {
+    display: flex;
+    height: 100vh;
+}
+
+.child1 {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.child2 {
+    width: 70%;
+    padding: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.hedding {
+    font-size: 20px;
+    margin-bottom: 20px;
+} */
+
+
+
+
+.parent {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
+
+}
+
+.child1 {
+    width: 25%;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.child2 {
+    width: 75%;
+    background-color: #e5ddd5;
+    display: flex;
+    flex-direction: column;
+}
+
+.hedding {
+    font-size: 1.4rem;
+    color: #075e54;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+/* In ChatRoom.module.css */
+
+.emptyMessage {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    font-style: italic;
+    background: linear-gradient(to top, #f4c4f3, #fc67fa);
+
+}

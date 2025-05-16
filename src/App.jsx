@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import ChatRoom from './pages/ChatRoom'
+import Protected from './pages/Protected'
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} ></Route>
           <Route path="/Login" element={<Login />} ></Route>
-          <Route path="/Signup" element={<Signup />} ></Route>
-          <Route path="/ChatRoom" element={<ChatRoom />} ></Route>
+          <Route path="/Signup" element={<Signup />}></Route>
+          <Route path="/ChatRoom" element={<Protected Component={ChatRoom} />}></Route>
         </Routes>
       </BrowserRouter>
 
