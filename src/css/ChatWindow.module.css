@@ -27,7 +27,7 @@
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 15px;
     margin-top: 2.2rem;
 }
 
@@ -39,6 +39,9 @@
     position: relative;
     display: inline-block;
     word-wrap: break-word;
+    border: solid 1.5px black;
+    box-shadow: 0 0 5px blue;
+    
 }
 
 .sent {
@@ -60,7 +63,7 @@
 .time {
     font-size: 0.75rem;
     position: absolute;
-    bottom: -15px;
+    bottom: -20px;
     right: 8px;
     color: black;
     
@@ -78,7 +81,7 @@
 
 .input {
     flex: 1;
-    padding: 0.6rem;
+    padding: 0.9rem;
     font-size: 1rem;
     border: none;
     border-radius: 20px;
@@ -97,4 +100,9 @@
     border-radius: 20px;
     cursor: pointer;
 }
+.sendBtn:hover{
+        background-color: #eb08d079;
+            color: black;
 
+
+}

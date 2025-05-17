@@ -24,7 +24,7 @@
     justify-content: space-between;
     padding: 10px 20px;
     z-index: 1000;
-    border-bottom: 2px solid #ccc;
+    /* border-bottom: 2px solid #ccc; */
     gap: 15px;
 }
 
@@ -58,6 +58,8 @@
 .greeting {
     font-size: 1rem;
     color: #cfd8dc;
+    text-shadow: 0px 0px 3px blue;
+    letter-spacing: 1px;
 }
 
 .title {

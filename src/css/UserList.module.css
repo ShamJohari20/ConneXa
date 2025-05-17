@@ -17,6 +17,7 @@
     border-right: 1px solid #ccc;
     border: 2px solid whitesmoke;
     border-radius: 20px;
+    box-shadow: 0 0 3px blueviolet, 0 0 5px blue;
 }
 
 
@@ -26,7 +27,8 @@
     font-weight: bold;
     color: white;
     text-align: center;
-    text-shadow: 0px 0px 3px blue
+    text-shadow: 0px 0px 3px blue;
+    letter-spacing: 1px;
 }
 
 .list {
@@ -61,10 +63,12 @@
     font-weight: bold;
     margin-right: 10px;
     font-size: 1rem;
+    border: solid 1px whitesmoke;
 }
 
 .userName {
     font-size: 1rem;
     color: white;
-    text-shadow: 0px 0px 3px blue
+    text-shadow: 0px 0px 3px blue;
+    letter-spacing: 1px;
 }
