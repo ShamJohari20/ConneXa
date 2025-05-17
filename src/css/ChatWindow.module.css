@@ -5,6 +5,7 @@
     height: 100vh;
     background:linear-gradient(to right,#ef32d9,#89fffd);
     
+    
 }
 
 .header {
@@ -27,6 +28,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    margin-top: 2.2rem;
 }
 
 .message {
