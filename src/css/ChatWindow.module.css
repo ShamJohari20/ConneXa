@@ -1,16 +1,18 @@
+
 .chatContainer {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #e5ddd5;
-    border-left: 1px solid #ccc;
+    background:linear-gradient(to right,#ef32d9,#89fffd);
+    
 }
 
 .header {
     padding: 1rem;
     font-weight: bold;
-    background-color: #075e54;
+    background:linear-gradient(to right,#ef32d9,#89fffd);
     color: white;
+    text-shadow: 0 0 3px blue, 0 0 5px blueviolet;
     text-align: center;
     font-size: 1.2rem;
     position: sticky;
@@ -39,13 +41,13 @@
 
 .sent {
     align-self: flex-end;
-    background-color: #dcf8c6;
+    background-color: #ef32d9;
     border-bottom-right-radius: 0;
 }
 
 .received {
     align-self: flex-start;
-    background-color: white;
+    background-color: #89fffd;
     border-bottom-left-radius: 0;
 }
 
@@ -58,15 +60,15 @@
     position: absolute;
     bottom: -15px;
     right: 8px;
-    color: #888;
+    color: black;
     
 }
 
 .inputBar {
     display: flex;
     padding: 0.6rem;
-    background-color: #f0f0f0;
-    border-top: 1px solid #ccc;
+    background:linear-gradient(to right,#ef32d9,#89fffd);
+    /* border-top: 1px solid #ccc; */
     position: sticky;
     bottom: 0;
     z-index: 10;
@@ -86,10 +88,11 @@
 
 .sendBtn {
     padding: 0.6rem 1rem;
-    background-color: #25d366;
+    background-color: #ef32d9;
     border: none;
     color: white;
     font-weight: bold;
     border-radius: 20px;
     cursor: pointer;
 }
+

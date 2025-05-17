@@ -56,41 +56,44 @@ function ChatWindow({ selectedUser, currentUser }) {
     };
 
     return (
-        <div className={style.chatContainer}>
-            <div className={style.header}>Chat with {selectedUser.name}</div>
+        <>
+            <div className={style.parent}>
+                <div className={style.chatContainer}>
+                    <div className={style.header}>Chat with {selectedUser.name}</div>
 
-            <div className={style.messages}>
-                {messages.map((msg, idx) => (
-                    <div
-                        key={idx}
-                        className={`${style.message} ${
-                            msg.senderId === currentUser.uid
-                                ? style.sent
-                                : style.received
-                        }`}
-                    >
-                        <span className={style.text}>{msg.text}</span>
-                        <span className={style.time}>
-                            {formatTime(msg.timestamp)}
-                        </span>
+                    <div className={style.messages}>
+                        {messages.map((msg, idx) => (
+                            <div
+                                key={idx}
+                                className={`${style.message} ${msg.senderId === currentUser.uid
+                                        ? style.sent
+                                        : style.received
+                                    }`}
+                            >
+                                <span className={style.text}>{msg.text}</span>
+                                <span className={style.time}>
+                                    {formatTime(msg.timestamp)}
+                                </span>
+                            </div>
+                        ))}
+                        <div ref={messageEndRef}></div>
                     </div>
-                ))}
-                <div ref={messageEndRef}></div>
-            </div>
 
-            <div className={style.inputBar}>
-                <input
-                    type="text"
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
-                    placeholder="Type a message"
-                    className={style.input}
-                />
-                <button onClick={sendMessage} className={style.sendBtn}>
-                    Send
-                </button>
+                    <div className={style.inputBar}>
+                        <input
+                            type="text"
+                            value={input}
+                            onChange={(e) => setInput(e.target.value)}
+                            placeholder="Type a message"
+                            className={style.input}
+                        />
+                        <button onClick={sendMessage} className={style.sendBtn}>
+                            Send
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 

@@ -19,19 +19,23 @@ function UserList({ onSelectUser, currentUserId }) {
     }, [currentUserId]);
 
     return (
-        <div className={style.userList}>
-            <h2 className={style.title}>Friends</h2>
-            <ul className={style.list}>
-                {users.map(user => (
-                    <li key={user.id} onClick={() => onSelectUser(user)} className={style.userItem}>
-                        <div className={style.avatar}>
-                            {user.name.charAt(0).toUpperCase()}
-                        </div>
-                        <div className={style.userName}>{user.name}</div>
-                    </li>
-                ))}
-            </ul>
-        </div>
+        <>
+            <div className={style.parent}>
+                <div className={style.userList}>
+                    <h2 className={style.title}>Friends</h2>
+                    <ul className={style.list}>
+                        {users.map(user => (
+                            <li key={user.id} onClick={() => onSelectUser(user)} className={style.userItem}>
+                                <div className={style.avatar}>
+                                    {user.name.charAt(0).toUpperCase()}
+                                </div>
+                                <div className={style.userName}>{user.name}</div>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+        </>
     );
 }
 
