@@ -20,13 +20,14 @@ function Login() {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in 
-        alert('Login Sucessfull')
+        alert('Login successful!')
         navigate('/ChatRoom')
         const user = userCredential.user;
         
         // ...
       })
       .catch((error) => {
+        alert('Invalid credentials or the user is not registered.')
         const errorCode = error.code;
         const errorMessage = error.message;
       });

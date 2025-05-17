@@ -4,7 +4,7 @@ import Login from './Login'
 import { Link, useNavigate } from 'react-router-dom'
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import { doc, setDoc } from 'firebase/firestore';
-import { auth, db} from './Firebase';
+import { auth, db } from './Firebase';
 import { Navigate } from 'react-router-dom';
 
 function Signup() {
@@ -20,6 +20,20 @@ function Signup() {
             return;
         }
 
+        // Strong email regex
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        // Strong password requirements
+        const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?#&])[A-Za-z\d@$!%*?#&]{8,}$/;
+        if (!strongPasswordRegex.test(password)) {
+            alert("Password must be at least 8 characters long and include uppercase, lowercase, number, and special character.");
+            return;
+        }
+
         try {
             const userCredential = await createUserWithEmailAndPassword(auth, email, password);
             const user = userCredential.user;
@@ -31,7 +45,7 @@ function Signup() {
                 password: password
             });
 
-            alert("Signup successful now You Can Login!");
+            alert("Signup successful! now You Can Login!");
 
             navigate('/Login')
 
