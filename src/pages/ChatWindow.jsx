@@ -7,7 +7,7 @@ import {
     onSnapshot,
     serverTimestamp,
 } from 'firebase/firestore';
-import { db } from './firebase';
+import { db } from './Firebase';
 import style from '../css/ChatWindow.module.css';
 
 function ChatWindow({ selectedUser, currentUser }) {

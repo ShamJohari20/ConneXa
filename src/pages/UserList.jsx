@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
-import { db } from './firebase';
 import style from '../css/UserList.module.css'; // 🔄 CSS Module
+import { db } from './Firebase';
 
 function UserList({ onSelectUser, currentUserId }) {
     const [users, setUsers] = useState([]);

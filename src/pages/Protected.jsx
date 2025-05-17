@@ -4,8 +4,8 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import Login from './Login';
 import { useNavigate } from 'react-router-dom';
 import style from '../css/Protected.module.css'
-import { auth } from './firebase';
 import ChatRoom from './ChatRoom';
+import { auth } from './Firebase';
 
 
 function Protected({Component}) {

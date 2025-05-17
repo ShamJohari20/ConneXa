@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 import style from '../css/Signup.module.css'
 import Login from './Login'
 import { Link, useNavigate } from 'react-router-dom'
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from './firebase';
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import { doc, setDoc } from 'firebase/firestore';
-import { db } from './firebase';
+import { auth, db} from './Firebase';
 import { Navigate } from 'react-router-dom';
 
 function Signup() {
